@@ -10,11 +10,11 @@
   	<script src="../bootstrap/js/jquery.min.js"></script>
   	<script src="../bootstrap/js/bootstrap.min.js"></script>
   	<script src="../bootstrap/js/bootstrap-datepicker.min.js"></script>
-  	
+
 </head>
 <body>
 	<section class="pinpointform">
-	
+
 		<div class="container">
 			<form method="post" action="../controller/information.php">
 			<div class="row">
@@ -26,7 +26,7 @@
 						<div class="cusinfo text-center">
 							<h4> DEALER REPORT</h4>
 						</div>
-					</div>                                                                                                                                              
+					</div>
 				</div>
 			</div><br><br><br>
 			<div class="row">
@@ -35,9 +35,9 @@
 						<table class="table">
 							<tr>
 								<td>
-									<span class="text-title"><strong>Agent Name:</strong></span> 
+									<span class="text-title"><strong>Agent Name:</strong></span>
 									<div class="text-input">
-										<input type="text" name="" class="" placeholder="..........................................................................................." />
+										<input type="text" name="agentname" class="" placeholder="..........................................................................................." />
 									</div>
 								</td>
 							</tr>
@@ -52,7 +52,7 @@
 						<table class="table">
 							<tr>
 								<td>
-									<span class="text-title"><strong>Recieved Date:</strong></span> 
+									<span class="text-title"><strong>Recieved Date:</strong></span>
 									<div class="text-input date">
 										<div class="input-group input-append date" id="datepicker">
 					                        <input type="text" class="form-control" name="date" />
@@ -60,21 +60,21 @@
 					                    </div>
 									</div>
 								</td>
-							</tr>	
+							</tr>
 						</table>
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="table-responsive">
 						<table class="table">
 							<tr>
 								<td>
-									<span class="text-title"><strong>Case Title:</strong></span> 
+									<span class="text-title"><strong>Case Title:</strong></span>
 									<div class="text-input">
-										<input type="text" name="" class="" placeholder="..........................................................................................." />
+										<input type="text" name="casetitle" class="" placeholder="..........................................................................................." />
 									</div>
 								</td>
 							</tr>
@@ -82,10 +82,10 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<div class="col-sm-12">
-					<span class="text-title service"><strong>Service:</strong></span> 
+					<span class="text-title service"><strong>Service:</strong></span>
 					<div class="">
 						<div class="table-responsive">
 							<table class="table">
@@ -93,36 +93,36 @@
 									<tr>
 										<td>
 											<label>
-											    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+											    <input type="checkbox" name="service[]" id="blankCheckbox" value="buy" aria-label="...">
 											    <div class="text-title"><strong>Buy</strong></div>
 											</label>
 										</td>
 										<td>
 											<label>
-											    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+											    <input type="checkbox" name="service[]" id="blankCheckbox" value="sale" aria-label="...">
 											    <div class="text-title"><strong>Sale</strong></div>
 											</label>
 										</td>
 										<td>
 											<label>
-											    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+											    <input type="checkbox" name="service[]" id="blankCheckbox" value="rent" aria-label="...">
 											    <div class="text-title"><strong>Rent</strong></div>
 											</label>
 										</td>
 										<td>
-											<span class="text-title"><strong>Budget </strong></span> 
+											<span class="text-title"><strong>Budget </strong></span>
 											<div class="">
-												<input type="text" name="" class="budget" placeholder="" />
+												<input type="text" name="budget" class="budget" placeholder="" />
 											</div>
 										</td>
 									</tr>
 								</tbody>
 							</table>
 						</div>
-					</div>					
-				</div>	
+					</div>
+				</div>
 			</div>
-			
+
 			<div class="row">
 				<div class="col-sm-12">
 					<h4 class="titletext">Customer Information</h4>
@@ -131,41 +131,41 @@
 							<tbody>
 								<tr>
 									<td>
-										<span class="text-title"><strong>First Name:</strong></span> 
+										<span class="text-title"><strong>First Name:</strong></span>
 										<div class="text-input">
-											<input type="text" name="" class="" placeholder="..........................................................................................." />
+											<input type="text" name="firstname" class="" placeholder="..........................................................................................." />
 										</div>
 									</td>
 									<td>
-										<span class="text-title"><strong>last Name:</strong></span> 
+										<span class="text-title"><strong>last Name:</strong></span>
 										<div class="text-input">
-											<input type="text" name="" class="" placeholder="..........................................................................................." />
+											<input type="text" name="lastname" class="" placeholder="..........................................................................................." />
 										</div>
 									</td>
 									<td>
-										<span class="text-title"><strong>Sex:</strong></span> 
+										<span class="text-title"><strong>Sex:</strong></span>
 										<div class="text-input">
-											<input type="text" name="" class="" placeholder="..........................................................................................." />
+											<input type="text" name="sex" class="" placeholder="..........................................................................................." />
 										</div>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<span class="text-title"><strong>Nationality:</strong></span> 
+										<span class="text-title"><strong>Nationality:</strong></span>
 										<div class="text-input">
-											<input type="text" name="" class="" placeholder="..........................................................................................." />
+											<input type="text" name="   nationality" class="" placeholder="..........................................................................................." />
 										</div>
 									</td>
 									<td>
-										<span class="text-title"><strong>Position:</strong></span> 
+										<span class="text-title"><strong>Position:</strong></span>
 										<div class="text-input">
-											<input type="text" name="" class="" placeholder="..........................................................................................." />
+											<input type="text" name="position" class="" placeholder="..........................................................................................." />
 										</div>
 									</td>
 									<td>
-										<span class="text-title"><strong>E-mail:</strong></span> 
+										<span class="text-title"><strong>E-mail:</strong></span>
 										<div class="text-input">
-											<input type="text" name="" class="" placeholder="..........................................................................................." />
+											<input type="text" name="email" class="" placeholder="..........................................................................................." />
 										</div>
 									</td>
 								</tr>
@@ -175,15 +175,15 @@
 							<tbody>
 								<tr>
 									<td>
-										<span class="text-title"><strong>Phone:</strong></span> 
+										<span class="text-title"><strong>Phone:</strong></span>
 										<div class="text-input">
-											<input type="text" name="" class="" placeholder=".............................................................................................................................................." />
+											<input type="text" name="phone" class="" placeholder=".............................................................................................................................................." />
 										</div>
 									</td>
 									<td>
-										<span class="text-title"><strong>Address:</strong></span> 
+										<span class="text-title"><strong>Address:</strong></span>
 										<div class="text-input">
-											<input type="text" name="" class="" placeholder="......................................................................................................................................................................................" />
+											<input type="text" name="address" class="" placeholder="......................................................................................................................................................................................" />
 										</div>
 									</td>
 								</tr>
@@ -193,9 +193,9 @@
 							<input type="reset" name="submit" value="Cancel" class="btn btn-sm btn-danger">
 							<input type="submit" name="submit" value="Add" class="btn btn-sm btn-success">
 							<br><br>
-						</div>	
+						</div>
 					</div>
-				</div>	
+				</div>
 			</div>
 			</form>
 		</div>
@@ -203,7 +203,7 @@
 </body>
 
 <script>
-        
+
         $(document).ready(function () {
           $('#datepicker').datepicker({
           format: "dd-mm-yyyy"
